@@ -41,11 +41,12 @@ git clone --recursive https://github.com/princeton-vl/DROID-SLAM.git
 conda env create -f environment.yaml
 pip install evo --upgrade --no-binary evo
 pip install gdown
+pip install chardet
 ```
 
 3. Compile the extensions (takes about 10 minutes)
 
-For Windows, Visual Studio should be installed with "Desktop development with C++". The command should be run in git bash. CUDA should also be installed in the conda environment. The dependencies can be installed using PIP instead of conda, without taking forever to resolve.
+For Windows, Visual Studio should be installed with "Desktop development with C++". The command should be run in git bash. CUDA should also be installed in the conda environment. The dependencies can be installed using PIP instead of conda, without taking forever to resolve. Follow [This](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html) for installing torch-scatter.
 
 ```Bash
 python setup.py install
