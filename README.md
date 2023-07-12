@@ -44,10 +44,12 @@ pip install gdown
 ```
 
 3. Compile the extensions (takes about 10 minutes)
+
+For Windows, Visual Studio should be installed with "Desktop development with C++". The command should be run in git bash. CUDA should also be installed in the conda environment. The dependencies can be installed using PIP instead of conda, without taking forever to resolve.
+
 ```Bash
 python setup.py install
 ```
-
 
 ## Demos
 
